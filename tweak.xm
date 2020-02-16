@@ -57,6 +57,6 @@ BOOL classicEnabled;
 %ctor {
 	HBPreferences *prefs = [[HBPreferences alloc] initWithIdentifier:@"com.itsjafer.bettermultitasking"];
 	[prefs registerBool:&enabled default:YES forKey:@"enabled"];
-	[prefs registerBool:&enabled default:YES forKey:@"classicEnabled"];
+	[prefs registerBool:&classicEnabled default:YES forKey:@"classicEnabled"];
 	%init;
 }

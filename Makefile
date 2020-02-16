@@ -8,6 +8,8 @@ TWEAK_NAME = BetterMultitasking
 
 BetterMultitasking_FILES = tweak.xm
 BetterMultitasking_CFLAGS = -fobjc-arc
-BigPiPEnergy_EXTRA_FRAMEWORKS += Cephei
+BetterMultitasking_EXTRA_FRAMEWORKS += Cephei
 
 include $(THEOS_MAKE_PATH)/tweak.mk
+SUBPROJECTS += bettermultitasking
+include $(THEOS_MAKE_PATH)/aggregate.mk
