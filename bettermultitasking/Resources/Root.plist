@@ -12,15 +12,9 @@
 		</dict>
 		<dict>
 			<key>cell</key>
-			<string>PSSwitchCell</string>
-			<key>default</key>
-			<true/>
-			<key>defaults</key>
-			<string>com.itsjafer.bettermultitasking</string>
-			<key>key</key>
-			<string>enabled</string>
-			<key>label</key>
-			<string>Enabled</string>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Made by itsjafer</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -30,9 +24,9 @@
 			<key>defaults</key>
 			<string>com.itsjafer.bettermultitasking</string>
 			<key>key</key>
-			<string>classicEnabled</string>
+			<string>enabled</string>
 			<key>label</key>
-			<string>Run iPhone apps natively</string>
+			<string>Enabled</string>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -48,7 +42,23 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>Made by itsjafer</string>
+			<string>This option will allow you to run iPhone apps in both landscape and portrait mode. I would recommend matching iPhone apps' default orientation (e.g. run Instagram/Snapchat in portrait mode).</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.itsjafer.bettermultitasking</string>
+			<key>key</key>
+			<string>classicEnabled</string>
+			<key>label</key>
+			<string>Run iPhone apps natively</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -64,6 +74,6 @@
 		</dict>
 	</array>
 	<key>title</key>
-	<string>bettermultitasking</string>
+	<string>BetterMultitasking</string>
 </dict>
 </plist>
