@@ -8,7 +8,7 @@ TWEAK_NAME = BetterMultitasking
 
 BetterMultitasking_FILES = tweak.xm
 BetterMultitasking_CFLAGS = -fobjc-arc
-BetterMultitasking_EXTRA_FRAMEWORKS += Cephei
+BetterMultitasking_EXTRA_FRAMEWORKS += Cephei CepheiPrefs
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 SUBPROJECTS += bettermultitasking

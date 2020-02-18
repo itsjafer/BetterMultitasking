@@ -20,6 +20,10 @@ BOOL classicEnabled;
 -(BOOL) _preventsLaunchInterfaceSplitting {
 	return enabled ? NO : %orig;
 }
+
+-(BOOL)supports64Bit {
+	return enabled ? YES : %orig;
+}
 %end
 
 %hook SBApplication

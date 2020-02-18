@@ -3,7 +3,7 @@ include $(THEOS)/makefiles/common.mk
 
 BUNDLE_NAME = bettermultitasking
 
-bettermultitasking_FILES = BMTRootListController.m
+bettermultitasking_FILES = BMTRootListController.mm
 bettermultitasking_INSTALL_PATH = /Library/PreferenceBundles
 bettermultitasking_FRAMEWORKS = UIKit
 bettermultitasking_PRIVATE_FRAMEWORKS = Preferences
