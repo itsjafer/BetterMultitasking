@@ -1,7 +1,7 @@
 Package: com.itsjafer.bettermultitasking
 Name: BetterMultitasking
 Depends: mobilesubstrate, ws.hbang.common (>= 1.11)
-Version: 1.1.0
+Version: 1.2.0
 Architecture: iphoneos-arm
 Description: An awesome MobileSubstrate tweak!
 Maintainer: itsjafer <itsjafer@gmail.com>

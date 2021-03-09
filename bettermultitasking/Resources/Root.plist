@@ -59,6 +59,26 @@
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>This option allows you to run multiple instances of the same app at the same time. Most apps are not designed to handle this and the second instance fails but there's some cool exceptions (Notability, Microsoft Suite, etc.).</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.itsjafer.bettermultitasking</string>
+			<key>key</key>
+			<string>multipleEnabled</string>
+			<key>label</key>
+			<string>Allow multiple instances of the same app</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>I do this for free but the donations are a nice little source of encouragement :)</string>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -70,7 +90,7 @@
 			<key>icon</key>
 			<string>paypal.png</string>
 			<key>label</key>
-			<string>Buy a college student bubble tea</string>
+			<string>Buy me bubble tea! </string>
 		</dict>
 	</array>
 	<key>title</key>

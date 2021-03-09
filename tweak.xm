@@ -1,7 +1,9 @@
 #import <Cephei/HBPreferences.h>
+#include <RemoteLog.h>
 
 BOOL enabled;
 BOOL classicEnabled;
+BOOL multipleEnabled;
 
 %hook SBApplicationInfo
 
@@ -22,6 +24,14 @@ BOOL classicEnabled;
 }
 
 -(BOOL)supports64Bit {
+	return enabled ? YES : %orig;
+}
+
+-(BOOL)supportsMultiwindow {
+	return multipleEnabled ? YES : %orig;
+}
+
+-(BOOL)requiresHiDPI {
 	return enabled ? YES : %orig;
 }
 %end
@@ -56,11 +66,16 @@ BOOL classicEnabled;
 	return classicEnabled ? NO : %orig;
 }
 
+-(BOOL) wantsLegacyFullscreenInterfaceOrientationBehaviors {
+	return classicEnabled ? NO : %orig;
+}
+
 %end
 
 %ctor {
 	HBPreferences *prefs = [[HBPreferences alloc] initWithIdentifier:@"com.itsjafer.bettermultitasking"];
 	[prefs registerBool:&enabled default:YES forKey:@"enabled"];
 	[prefs registerBool:&classicEnabled default:YES forKey:@"classicEnabled"];
+	[prefs registerBool:&multipleEnabled default:YES forKey:@"multipleEnabled"];
 	%init;
 }
